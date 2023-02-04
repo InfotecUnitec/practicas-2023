@@ -1,0 +1,24 @@
+{
+  "name": "practicas-2023",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "test-ui": "vitest --ui"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/InfotecUnitec/practicas-2023.git"
+  },
+  "author": "Camilo Di Paolo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/InfotecUnitec/practicas-2023/issues"
+  },
+  "homepage": "https://github.com/InfotecUnitec/practicas-2023#readme",
+  "devDependencies": {
+    "@vitest/ui": "^0.28.4",
+    "vitest": "^0.28.4"
+  }
+}
