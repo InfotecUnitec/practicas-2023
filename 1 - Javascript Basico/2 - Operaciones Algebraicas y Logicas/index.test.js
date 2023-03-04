@@ -48,4 +48,42 @@ describe("Operaciones Algebraicas", () => {
   });
 });
 
-describe("Operaciones Logicas", () => {});
+describe("Operaciones Logicas", () => {
+  it("OR", () => {
+    let x;
+    let y;
+
+    expect(x || y).toBe(true);
+  });
+  it("AND", () => {
+    let x;
+    let y;
+
+    expect(x && y).toBe(true);
+  });
+  it("NOT", () => {
+    let x = false;
+    let y = !x;
+
+    expect(y).toBe(false);
+  });
+  it("Comparaciones", () => {
+    let x;
+    let y;
+    let z;
+
+    expect(x > 4).toBe(true);
+    expect(y < 5).toBe(true);
+    expect(z >= 3).toBe(true);
+    expect(x == "3").toBe(true);
+    expect(x === 3).toBe(true);
+  });
+
+  it("Short Circuit Evaluation", () => {
+    let x = 10;
+    let y;
+
+    expect(y || x).toBe(10);
+    expect(y && x).toBe(false);
+  });
+});
