@@ -85,14 +85,59 @@ console.log("Ahora llega la respuesta...");
 
 Como se puede observar aparecen 2 palabras clave: **async** y **await**. Async nos indica que la función se ejecutará de forma asincrónica, mientras que await bloquea el flujo de las instrucciones hasta que se resuelva la promesa por la que está esperando y retorna el resultado de la promesa.
 
-```javascript
+## Excepciones
 
+Una **Excepcion** representa la presencia de una condicion anormal que requiere tecnicas operables especiales.
+En terminos de programacion una excepcion es una porcion de codigo que rompe el fujo normal del codigo. Por ejemplo en lenguajes fuertemente tipados se podria producir una excepcion cuando intentamos asignarle a una variable un tipo que no le corresponden.
+
+Algunos ejemplos de excepciones
+
+```javascript
+// RangeError: cuando un numero esta fuera de su rango de valores
+const arr = [];
+arr.length = 99 ** 99; // 99^99
+
+// TypeError: cuando una operacion se realiza con los datos incorrectors
+const num = 100;
+num.toUpperCase(); // metodo de strings
 ```
 
-```javascript
+## Manejo de excepciones
 
+JavaScript cuenta con una estructura de control para manejar estas Excepcines. Sirven tanto para código sincrónico como asincrónico, pero se utilizan mayormente con asincrónico. A continuación cometeremos un error a propósito para ver su funcionamiento(Introducimos mal la URL “..Awww..”):
+
+```javascript
+const URL =
+  "https://Awww.thecocktaildb.com/api/json/v1/1/search.php?s=margarita";
+
+const funcionAsincronica = async function () {
+  try {
+    // intentamos ejecutar este código
+    const response = await fetch(URL);
+    const data = await response.json();
+    console.log(data);
+  } catch (err) {
+    // en caso de que suceda un error lo informamos en pantalla sin detener el programa
+    console.log(err);
+  } finally {
+    // esto se ejecuta al final de la consulta sin importar el resultado
+    console.log("Termino la consulta");
+  }
+  console.log(
+    "Si no tuviéramos el bloque try-catch no veríamos este mensaje..."
+  );
+};
+
+fetch(URL)
+  .then((res) => console.log(res))
+  .catch((err) => console.log(err))
+  .finally(() => {
+    console.log("Termino la consulta");
+  });
+
+console.log("Hola :D");
+funcionAsincronica();
+console.log("Ahora llega la respuesta...");
 ```
 
-```javascript
-
-```
+Es muy comun que utilicemos el manejo de excepciones cuando trabajamos con Promesas, debido a que estas pueden tener un estado fallido que dispara una excepcion.
