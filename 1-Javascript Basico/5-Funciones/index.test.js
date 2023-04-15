@@ -1,13 +1,5 @@
 import { describe, it, expect } from "vitest";
-import {
-  sum,
-  pot,
-  isMultiple,
-  fibonacci,
-  removeSpaces,
-  mayusMinus,
-  oldDate,
-} from "../answer";
+import { sum, pot, isMultiple, fibonacci, removeSpaces, mayusMinus, oldDate } from "../answer";
 
 describe("Funciones", () => {
   it("Matematicas", () => {
@@ -35,7 +27,7 @@ describe("Funciones", () => {
      * Esta funcion deve devolver un arreglo con todos los numeros de fibonacci hasta n inclusive
      */
 
-    expect(fibonacci(21)).toBe([1, 1, 2, 3, 5, 8, 13, 21]);
+    expect(fibonacci(21)).toStrictEqual([1, 1, 2, 3, 5, 8, 13, 21]);
   });
 
   it("Strings", () => {
@@ -43,18 +35,14 @@ describe("Funciones", () => {
      * Programar una funcion que reciba un String str
      * Esta funcion debe retortar el mismo string pero sin espacios
      */
-    expect(removeSpaces("Hola soy una cadena de caracteres")).toBe(
-      "Holasoyunacadenadecaracteres"
-    );
+    expect(removeSpaces("Hola soy una cadena de caracteres")).toBe("Holasoyunacadenadecaracteres");
 
     /**
      * Programar una funcion que reciba un String str
      * Esta funcion debe hacer que todas las palabras pares comiencen con mayuscula y tengan el resto en minuscula
      * y las palabras inpares deben comenzar con mayuscula y tener el resto en mayuscula
      */
-    expect(mayusMinus("Hola soy una cadena de caracteres")).toBe(
-      "hOLA Soy uNA Cadena dE Caracteres"
-    );
+    expect(mayusMinus("Hola soy una cadena de caracteres")).toBe("hOLA Soy uNA Cadena dE Caracteres");
   });
   it("Fechas", () => {
     /**

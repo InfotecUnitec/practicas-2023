@@ -8,7 +8,7 @@ describe("Manejo avanzado de arreglos", () => {
     const arr1 = [1, 2, 2];
     const arr2 = [];
 
-    expect(arr2).toBe([1, 2, 3]);
+    expect(arr2).toStrictEqual([1, 2, 3]);
   });
   it("map", () => {
     /**
@@ -18,7 +18,7 @@ describe("Manejo avanzado de arreglos", () => {
     const arr1 = [1, 2, 3];
     const arr2 = [];
 
-    expect(arr2).toBe([2, 3, 4]);
+    expect(arr2).toStrictEqual([2, 3, 4]);
   });
   it("filter", () => {
     /**
@@ -27,6 +27,6 @@ describe("Manejo avanzado de arreglos", () => {
     const arr1 = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     const arr2 = [];
 
-    expect(arr2).toBe([1, 3, 5, 7]);
+    expect(arr2).toStrictEqual([1, 3, 5, 7]);
   });
 });

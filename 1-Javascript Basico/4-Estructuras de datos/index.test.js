@@ -15,30 +15,30 @@ describe("Arreglos", () => {
     // agregar x
     let x = 1;
 
-    expect(arr).toBe([1]);
+    expect(arr).toStrictEqual([1]);
 
     // agregar y
     let y = 2;
 
-    expect(arr).toBe([1, 2]);
+    expect(arr).toStrictEqual([1, 2]);
 
     // agregar z
     let z = 3;
 
-    expect(arr).toBe([1, 2, 3]);
+    expect(arr).toStrictEqual([1, 2, 3]);
   });
   it("Eliminar elementos", () => {
     let arr = [1, 2, 3];
 
     // eliminar el ultimo elemento
 
-    expect(arr).toBe([1, 2]);
+    expect(arr).toStrictEqual([1, 2]);
 
     let arr2 = [1, 2, 3];
 
     // eliminar el 2
 
-    expect(arr2).toBe([1, 3]);
+    expect(arr2).toStrictEqual([1, 3]);
   });
   it("Largo de un arreglo", () => {
     let arr = [];
