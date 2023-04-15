@@ -8,7 +8,8 @@ describe("Operaciones con archivos", () => {
     // Nota: para convertir un String en JSON prude usar el metodo JSON.parse(str)
     // Nota: para obtener el path del archivo puede usar la variale __dirname
 
-    const user = JSON.parse(fs.readFileSync(__dirname + "/files/user.JSON").toString());
+    // almacene el contenido del archivo en la variable user y conviertalo a JSON
+    const user = {};
 
     expect(user).toStrictEqual({ name: "juan" });
   });
@@ -19,7 +20,8 @@ describe("Operaciones con archivos", () => {
 
     const read = promisify(fs.readFile);
 
-    const data = await read(__dirname + "/files/user.JSON");
+    // alamcene el contenido del archivo en data
+    const data = {};
     const user = JSON.parse(data.toString());
 
     expect(user).toStrictEqual({ name: "juan" });
@@ -29,10 +31,10 @@ describe("Operaciones con archivos", () => {
     // crear un archivo llamado 'created.JSON' en la carpeta files
     // Nota: para convertir un Objeto en Sitrng puede usar el metodo JSON.stringify()
 
-    fs.writeFileSync(__dirname + "/files/created.JSON", JSON.stringify({ name: "juancito" }));
+    // cree el archivo
 
     // use la funcion de lectura sincronica utilizada en los test anteriores
-    const user = JSON.parse(fs.readFileSync(__dirname + "/files/created.JSON").toString());
+    const user = {};
 
     expect(user).toStrictEqual({ name: "juancito" });
   });
@@ -42,12 +44,12 @@ describe("Operaciones con archivos", () => {
     // para esto converta la funcion "writeFile" del modulo fs en una promesa con el modulo 'promisify'
 
     const write = promisify(fs.writeFile);
-    // funcion creada en los test anteriores
     const read = promisify(fs.readFile);
 
-    await write(__dirname + "/files/created_async.JSON", JSON.stringify({ name: "juan" }));
+    // cree el archivo de forma asincronica
 
-    const data = await read(__dirname + "/files/created_async.JSON");
+    // lea el archivo de forma asincronica
+    const data = {};
     const user = JSON.parse(data.toString());
 
     expect(user).toStrictEqual({ name: "juan" });
@@ -55,8 +57,6 @@ describe("Operaciones con archivos", () => {
 
   it("eliminacion de archivos de forma sincronica", () => {
     // elimine el archivo llamado 'created.JSON
-
-    fs.unlinkSync(__dirname + "/files/created.JSON");
 
     let existe = true;
     try {
@@ -73,8 +73,6 @@ describe("Operaciones con archivos", () => {
     // para esto convierta la funcion "unlink" del modulo fs en una promesa con el modulo 'promisify'
 
     const unlink = promisify(fs.unlink);
-
-    await unlink(__dirname + "/files/created_async.JSON");
 
     let existe = true;
     try {
