@@ -10,7 +10,7 @@ El módulo "fs" nos permite realizar operaciones CRUD (Crear, Leer, Actualizar y
 
 ## Operaciones CRUD Síncronas
 
-Las operaciones síncronas bloquean el hilo principal de ejecución hasta que se completa la operación. Aunque son más sencillas de utilizar, pueden provocar problemas de rendimiento en aplicaciones de alta carga. Aquí se muestra un ejemplo de cómo crear un archivo utilizando una operación síncrona:
+Las operaciones síncronas bloquean el hilo principal de ejecución hasta que se completa la operación. Aunque son más sencillas de utilizar, pueden provocar problemas de rendimiento en aplicaciones de alta carga. A continuacion se muestra un ejemplo de cómo crear un archivo utilizando una operación síncrona:
 
 ### Lectura
 
@@ -66,7 +66,7 @@ try {
 
 ## Operaciones CRUD Asíncronas
 
-Las operaciones asíncronas no bloquean el hilo principal de ejecución, lo que significa que podemos realizar múltiples operaciones simultáneamente. En lugar de usar callbacks, podemos utilizar promesas o async/await para manejar el resultado de la operación. Aquí se muestra un ejemplo de cómo crear un archivo utilizando una operación asíncrona con promesas:
+Las operaciones asíncronas no bloquean el hilo principal de ejecución, lo que significa que podemos realizar múltiples operaciones simultáneamente. En lugar de usar callbacks, podemos utilizar promesas o async/await para manejar el resultado de la operación. A continuacion se muestra un ejemplo de cómo crear un archivo utilizando una operación asíncrona con promesas:
 
 ### Lectura
 
@@ -128,7 +128,7 @@ fs.appendFile("archivo.txt", "\nEste es un nuevo contenido para el archivo", (er
 
 El módulo "util" de Node.js proporciona una función llamada "promisify" que nos permite convertir una función con callback en una función que devuelve una promesa. Esto es útil para trabajar con operaciones asíncronas utilizando async/await o promesas.
 
-Aquí hay un ejemplo de cómo utilizar "promisify" con la función "writeFile" del módulo "fs":
+A continuacion hay un ejemplo de cómo utilizar "promisify" con la función "writeFile" del módulo "fs":
 
 ```javascript
 const fs = require("fs");

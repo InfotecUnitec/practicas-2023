@@ -182,7 +182,7 @@ const authRouter = require("./rutas/auth");
 app.use("/auth", authRouter);
 ```
 
-En este ejemplo, el Router de autenticación se monta en la ruta /auth. Por lo tanto, las rutas definidas en el Router se accederán a través de /auth/login, /auth/logout, etc.
+En este ejemplo, el Router de autenticación se monta en la ruta /auth. Por lo tanto, las rutas definidas en el Router se accederán a través de **/auth/login**, **/auth/logout**, etc.
 
 Utilizando un Router, se puede modularizar el enrutamiento en una aplicación de Express, lo que hace que el código sea más fácil de mantener y escalar. Además, un Router también puede contener su propio middleware y funciones de manejo de errores.
 
@@ -232,3 +232,36 @@ router.use((req, res, next) => {
   }
 });
 ```
+
+## Arquitectura REST
+
+La arquitectura REST (Representational State Transfer) es un estilo de arquitectura de software para sistemas distribuidos que se basa en la utilización de estándares web y HTTP. La arquitectura REST define un conjunto de principios que deben seguir las aplicaciones web para que sean consideradas RESTful.
+
+El principio fundamental de la arquitectura REST es que todo en la aplicación web es un recurso que se puede identificar mediante un URI (Identificador de Recursos Uniforme). Los recursos pueden ser datos, servicios o cualquier otro tipo de entidad que se pueda representar digitalmente.
+
+Para acceder a los recursos, se utilizan los métodos HTTP, que se corresponden con las operaciones CRUD (Crear, Leer, Actualizar y Eliminar) que se pueden realizar sobre los recursos. Los métodos HTTP más comunes son:
+
+- GET: para obtener un recurso
+- POST: para crear un recurso
+- PUT: para actualizar un recurso existente
+- DELETE: para eliminar un recurso existente
+
+Además, la arquitectura REST utiliza los códigos de estado HTTP para indicar el resultado de una operación. Algunos de los códigos de estado más comunes son:
+
+- 200 OK: la operación se ha realizado correctamente
+- 201 Created: se ha creado un nuevo recurso
+- 400 Bad Request: la petición es incorrecta o está mal formada
+- 404 Not Found: el recurso no se ha encontrado
+- 500 Internal Server Error: ha habido un error en el servidor
+
+La arquitectura REST también define que la comunicación entre el cliente y el servidor debe ser sin estado, lo que significa que cada petición que se realiza al servidor debe contener toda la información necesaria para que el servidor pueda entenderla y procesarla correctamente.
+
+Por último, la arquitectura REST utiliza formatos de datos estándar para representar los recursos, como JSON (JavaScript Object Notation) o XML (Extensible Markup Language).
+
+Supongamos que tenemos una aplicación web de comercio electrónico que utiliza la arquitectura REST para manejar los recursos de los productos. En ese caso, las URL para acceder a los recursos del producto podrían tener la siguiente estructura:
+
+- Obtener todos los productos: **GET /productos**
+- Obtener un producto específico: **GET /productos/{id}**
+- Crear un nuevo producto: **POST /productos**
+- Actualizar un producto existente: **PUT /productos/{id}**
+- Eliminar un producto existente: **DELETE /productos/{id}**
