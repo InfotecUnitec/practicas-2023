@@ -1,17 +1,20 @@
-[
-  {
-    "id": 1,
-    "name": "mandarina",
-    "price": 100
-  },
-  {
-    "id": 2,
-    "name": "banana",
-    "price": 200
-  },
-  {
-    "id": 1,
-    "name": "manzana",
-    "price": 50
-  }
-]
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "mandarina",
+      "price": 100
+    },
+    {
+      "id": 2,
+      "name": "banana",
+      "price": 200
+    },
+    {
+      "id": 3,
+      "name": "manzana",
+      "price": 500
+    }
+  ],
+  "cart": []
+}

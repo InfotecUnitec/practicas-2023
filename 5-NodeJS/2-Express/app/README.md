@@ -66,7 +66,11 @@ Crea un producto con los datos enviados en el payload
 ```JSON
 {
   "status": "success",
-  "message": "created"
+  "data": {
+    "id": 4,
+    "name": "pera",
+    "price": 40
+  }
 }
 ```
 

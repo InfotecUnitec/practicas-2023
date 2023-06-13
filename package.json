@@ -20,5 +20,8 @@
   "devDependencies": {
     "@vitest/ui": "^0.28.4",
     "vitest": "^0.28.4"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
   }
 }
