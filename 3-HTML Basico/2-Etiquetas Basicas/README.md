@@ -32,4 +32,4 @@ Las etiquetas mas basicas, ademas de <div></div> son:
 
 ## Tarea
 
-Crear un archivo con las mismas caracteristicas que el punto anterior, agregando como viene siendo su experiencia en infotec (utilizar las etiquetas aca vista, en especial el <div></div>)
+Crear un archivo con las mismas caracteristicas que el punto anterior, agregando como viene siendo su experiencia en infotec (utilizar las etiquetas aca vista, en especial el ```<div></div>```)
