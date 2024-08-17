@@ -25,7 +25,7 @@ Las etiquetas mas basicas, ademas de ```<div></div>``` son:
 
 - ```<span></span>``` : Etiqueta de texto, con la particularidad de que no tiene salto de linea
 - ```<p></p>```: Etiqueta de texto que tiene un salto de linea
-- ```<h1></h1>```: Etiqueta con estilo para un titulo (existe desde <h1></h1> hasta <h6></h6>)
+- ```<h1></h1>```: Etiqueta con estilo para un titulo (existe desde ```<h1></h1>``` hasta ```<h6></h6>```)
 - ```<a></a>```: Etiqueta para insertar enlaces
 - ```<strong></strong>```: Etiqueta especial para poner texto en negrita
 - ```<br>```: Etiqueta especial para hacer un salto de linea
