@@ -14,8 +14,8 @@ y por otro lado las listas de definiciones
 
 Este tipo de lista mostrara todos sus items ordenados numericamente del 1 hacia adelante, utliza 2 etiquetas:
 
-- <ol></ol>: Etiqueta padre que engloba todos los elementos que van dentro de la lista
-- <li></li>: Etiqueta que representa cada elemento de la lista
+- ```<ol></ol>```: Etiqueta padre que engloba todos los elementos que van dentro de la lista
+- ```<li></li>```: Etiqueta que representa cada elemento de la lista
 
 Ejemplo
 
@@ -31,8 +31,8 @@ Ejemplo
 
 Estas listas en cambio, no tienen ningun criterio de ordenamiento, simplemente muestran los items com un ".", utiliza 2 etiquetas:
 
-- <ul></ul>: Etiqueta padre que engloba todos los elementos dentro de la lista
-- <li></li>: Etioqueta que representa cada elemento de la lista
+- ```<ul></ul>```: Etiqueta padre que engloba todos los elementos dentro de la lista
+- ```<li></li>```: Etioqueta que representa cada elemento de la lista
 
 Ejemplo
 
@@ -48,9 +48,9 @@ Ejemplo
 
 Este tipo de lista es el menos usado pero sirve para representar glosarios principalmente, utiliza 3 etiquetas:
 
-- <dl></dl>: Etiqueta padre que engloba todos los elementos que van dentro de la lista
-- <dt></dt>: Etiqueta que representa el titulo o termino a describir
-- <dd></dd>: Etiqueta que va debajo de <dt></dt> añadiendo una breve descripcion al termino
+- ```<dl></dl>```: Etiqueta padre que engloba todos los elementos que van dentro de la lista
+- ```<dt></dt>```: Etiqueta que representa el titulo o termino a describir
+- ```<dd></dd>```: Etiqueta que va debajo de ```<dt></dt>``` añadiendo una breve descripcion al termino
 
 ## Tarea
 
