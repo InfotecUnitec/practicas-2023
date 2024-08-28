@@ -10,9 +10,9 @@ por ahora vamos a centrarnos en la creacion de estos formularios
 
 Se utilizan 3 etiquetas principales para la creacion de formularios:
 
-- <form></form>  : Etiqueta padre que engloba todo lo que vaya dentro del formulario
-- <label></label>: Etiqueta para darle un titulo a un input
-- <input> : Etiqueta principal con muchos tipos distintos para la recopilacion de informacion
+- ```<form></form>```: Etiqueta padre que engloba todo lo que vaya dentro del formulario
+- ```<label></label>```: Etiqueta para darle un titulo a un input
+- ```<input>``` : Etiqueta principal con muchos tipos distintos para la recopilacion de informacion
 
 Ejemplo
 
