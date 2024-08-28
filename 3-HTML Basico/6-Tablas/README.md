@@ -32,12 +32,12 @@ Para crear una tabla se necesita de uan combinacion de etiquetas, un ejemplo de 
 
 Donde:
 
-- <table></table>: Es la etiqueta que engloba a toda la tabla
-- <thead></thead>: Es la etiqueta que representa todo el encabezado de la tabla
-- <tr></tr>      : Es la etiqueta que engloba todos los elementos de una fila
-- <th></th>      : Representa un elemento dentro de la fila de ENCABEZADOS
-- <tbody></tbody>: Es la etiqueta que engloba todo el cuerpo de la tabla
-- <td></td>      : Represneta un elemento dentro de la fila del CUERPO
+- ```<table></table>```: Es la etiqueta que engloba a toda la tabla
+- ```<thead></thead>```: Es la etiqueta que representa todo el encabezado de la tabla
+- ```<tr></tr>```      : Es la etiqueta que engloba todos los elementos de una fila
+- ```<th></th>```      : Representa un elemento dentro de la fila de ENCABEZADOS
+- ```<tbody></tbody>```: Es la etiqueta que engloba todo el cuerpo de la tabla
+- ```<td></td>```      : Represneta un elemento dentro de la fila del CUERPO
 
 ## Tarea
 
