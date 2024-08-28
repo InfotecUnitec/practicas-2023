@@ -9,9 +9,9 @@ Cabe aclarar que de las 3, la mas utilizada es la etiqueta de imagen, pero nunca
 
 Estas 3 etiquetas son:
 
-- <img> : Etiqueta para añadir imagenes a traves de su atributo "src"
-- <audio></audio> : Etiqueta para añadir un audio a traves de su atributo "src"
-- <video></video> : Etiqueta para añadir un video a traves de su atributo "src"
+- ```<img>``` : Etiqueta para añadir imagenes a traves de su atributo "src"
+- ```<audio></audio>``` : Etiqueta para añadir un audio a traves de su atributo "src"
+- ```<video></video>``` : Etiqueta para añadir un video a traves de su atributo "src"
 
 Estas 3 etiquetas tienen muchos atributos unicos para darle la forma a cada formato,es recomendable que vean la documentacion de cada una para asi conocerlas mejor.
 
