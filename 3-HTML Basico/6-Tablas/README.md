@@ -47,4 +47,4 @@ Crear un archivo con las mismas caracteristicas del punto anterior, agregando un
 - Horas que estuvieron en la clase
 - Breve descripcion de lo hecho en la clase
 
-Pueden utilizar como referencia el siguente [excel](https://docs.google.com/spreadsheets/d/1IvrG0LOUyKkrOMHnM4JIH9G0ug3lK4PE/edit?usp=sharing&ouid=115716158911216165456&rtpof=true&sd=true)
+Pueden utilizar como referencia el siguente [excel]([https://docs.google.com/spreadsheets/d/1IvrG0LOUyKkrOMHnM4JIH9G0ug3lK4PE/edit?usp=sharing&ouid=115716158911216165456&rtpof=true&sd=true](https://docs.google.com/spreadsheets/d/1VuKtw1-cpIaZtShewmz9fz28Y6Ki4hfS/edit?gid=1023296915#gid=1023296915))
